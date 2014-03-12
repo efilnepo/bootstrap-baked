@@ -46,7 +46,7 @@ module.exports = function (grunt) {
                 files: ['Gruntfile.js']
             },
             less: {
-                files: ['<%= config.app %>/styles/{,*/}*.less'],
+                files: ['<%= config.app %>/styles/{,*/}*.less', '<%= config.app %>/bower_components/bootstrap/less/{,*/}*.less'],
                 tasks: ['less:server', 'autoprefixer']
             },
             styles: {
